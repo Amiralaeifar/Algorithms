@@ -5,5 +5,5 @@
 + _grokking algorithms_
 
 #### problem sets from:
-+ _[leetcode](https://leetcode.come)_
++ _[leetcode](https://leetcode.com)_
 + _[codeforces](https://codeforces.com)_
