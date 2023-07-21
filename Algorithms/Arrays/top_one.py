@@ -18,10 +18,7 @@ def top_one(arr):
     result = []
     
     for i in arr:
-        if i in values:
-            values[i] += 1
-        else:
-            values[i] = 1
+        values[i] = values.get(i, 0) + 1
         
     max_value = max(values.values())
     
@@ -33,4 +30,4 @@ def top_one(arr):
         
 
 
-print(top_one([1, 1, 1, 2, 2, 3, 4]))
+print(top_one([1, 1, 1, 2, 2, 3, 4])) # --> [1] with the repition of 3
