@@ -13,8 +13,8 @@ def remove_min(arr):
             min_value = arr[i]
             wanted_indice = i
             
-    removed_min = arr.pop(wanted_indice)
-    return f'{arr} and the poped element is {removed_min}'
+    removed_element = arr.pop(wanted_indice)
+    return f'{arr} and the poped element is {removed_element}'
     
     
 
