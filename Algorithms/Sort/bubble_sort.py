@@ -16,3 +16,17 @@ def bubble_sort(arr):
         if not swapped:
             break
     return arr
+
+
+
+def bubble_sort2(arr):
+    i = len(arr) - 1
+    while i > 0:
+        j = 0
+        while j < i:
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+            j += 1
+        i -= 1
+    return arr
+
