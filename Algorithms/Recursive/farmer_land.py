@@ -1,9 +1,10 @@
 '''
-    you are given a farm land, help the farmer to divide the land to biggest equal square size pieces.
-
-    x and y are the height and width of the original land
+    Suppose you’re a farmer with a plot of land.
+    You want to divide this farm evenly into square plots. You want the plots
+    to be as big as possible.
     
-    HINT: remember Divide & Conquer
+    How do you figure out the largest square size you can use for a plot of
+    land?
     
 '''
 
