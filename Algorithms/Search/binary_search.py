@@ -1,4 +1,7 @@
 def binary_search(arr, wanted):
+    '''
+        works on sorted arrays.
+    '''
     
     low = 0
     high = len(arr)
