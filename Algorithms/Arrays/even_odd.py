@@ -28,6 +28,7 @@ def even_odd2(arr):
             i += 1
         else:
             arr[i], arr[j] = arr[j], arr[i] # instead of deletions and insertion we consider swapping.
+            
             j -= 1
     return arr
 
