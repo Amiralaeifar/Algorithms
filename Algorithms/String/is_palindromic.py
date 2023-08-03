@@ -8,4 +8,20 @@ def is_palindromic(string):
     return all(string[i] == string[~i] for i in range(len(string) // 2))
 
 
+# the final trick :)
+def is_palindromic2(string): 
+    return string == string[::-1]
+
 print( is_palindromic('garag') )
+print( is_palindromic2('garag') )
+
+
+
+# NOTE : there is a handy func to check whether a string is palindromic or not
+
+def palinromic(str):
+    return str == ''.join([ch for ch in reversed(str)])
+
+
+print( palinromic('amir') )
+
