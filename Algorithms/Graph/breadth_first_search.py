@@ -1,17 +1,7 @@
 from collections import deque  # --> for implementing a queue
 
-#implementing graph in dictionary as an example
-graph = {
-    'you': ['mahkam','mahyar','sadra','arman'],
-    'mahkam': ['mashahir', 'you'],
-    'mahyar': ['zahra', 'sadra', 'you', 'sina'],
-    'sadra': ['morva', 'mahyar', 'you'],
-    'arman': ['you']
-}
-
-#imagine the wanted node is sina
 def is_wanted(name):
-    if name == 'sina':
+    if name == 'wanted':
         return True
 
 #the actual algorithm
@@ -31,6 +21,3 @@ def breadth_first_search(name):
                 else:
                     searched.append(person)
     return "didn't found"
-
-
-print(breadth_first_search('you'))
