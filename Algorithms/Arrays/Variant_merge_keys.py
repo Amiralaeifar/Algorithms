@@ -17,10 +17,29 @@ def reorder_by_key(arr):
     
     result_arr = []
     for key, values in d.items():
-        for value in values:
+        for _ in values:
             result_arr.append(key)
             
-    return d, result_arr
+    return result_arr
 
 
 print( reorder_by_key([3, 1, 2, 1, 1, 3]) )
+
+
+#another implementation
+def reorder_by_key2(arr):
+    
+    i = 0
+    while i < len(arr):
+        j = i + 1
+        k = i + 1
+        while j < len(arr):
+            if arr[i] == arr[j]:
+                arr[k], arr[j] = arr[j], arr[k]
+                k += 1
+            j += 1
+        i = k 
+    
+    return arr
+
+print( reorder_by_key2([3, 1, 2, 3, 1, 3]) )
