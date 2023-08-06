@@ -23,7 +23,7 @@ def reorder_by_key(arr):
     return result_arr
 
 
-print( reorder_by_key([3, 1, 2, 1, 1, 3]) )
+print( reorder_by_key([3, 4, 1, 2, 1, 4, 1, 3]) )
 
 
 #another implementation
