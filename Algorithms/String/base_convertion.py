@@ -3,10 +3,9 @@
     The string represents an integer in base b1. The output should be the string representing the integer in base b2.
 
 '''
-
-
 import functools
 import string 
+
 
 def convert_base(num_as_string, b1, b2):
     def construct_from_base(num_as_int, base):
@@ -17,11 +16,12 @@ def convert_base(num_as_string, b1, b2):
         
     is_negative = num_as_string[0] == '-'
     num_as_int = functools.reduce(
-        lambda x, c: x * b1 + string.hexdigits.index(c.lower()),
+        lambda running_sum, c: running_sum * b1 + string.hexdigits.index(c.lower()),
         num_as_string[is_negative:], 0
     )
     return ('-' if is_negative else '') + ('0' if num_as_int == 0 else
                                            construct_from_base(num_as_int, b2))
+    
     
     
 print(convert_base('615', 7, 13))
